@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="500" height="100" border="1" cellpadding="2" cellspacing="2">
+    <tr>
+        <td></td>
+        <td colspan="2"></td>
+<!--        colspan 这是一个跨2列的单元格-->
+<!--        记得要把被合并的的对应单元格删掉,不然会挤占原有单元格空间-->
+
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <!--        4个tr对应4行 3个td对应3列-->
+
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+<!--        跨2行的单元格-->
+<!--        记得要把要被合并的单元格删掉,不然这个跨行单元格会挤占原来单元格的位置-->
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
