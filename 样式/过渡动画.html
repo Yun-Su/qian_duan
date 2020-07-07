@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>W3Cschool教程(w3cschool.cn)</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background: greenyellow;
+            transition: width 2s, height 2s, transform 2s;
+        /*    定义div 可设置四个过渡属性*/
+        }
+        div:hover
+        /* 定义鼠标放在上面的时候自动触发的动作 */
+        {
+            width:500px;
+            height: 500px;
+            transform: rotate(180deg);
+        /* 定义旋转角度*/
+        }
+    </style>
+</head>
+<body>
+<div>鼠标移动到 div 元素上，查看过渡效果。</div>
+</body>
+</html>

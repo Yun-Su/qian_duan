@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>W3Cschool教程(w3cschool.cn)</title>
+    <style>
+        #example1 {
+            border: 10px dotted black;
+            /*dotted 参数定义boder类型*/
+            padding:35px;
+            background: yellow;
+        }
+
+        #example2 {
+            border: 10px dotted black;
+            /*dotted 参数定义boder类型*/
+            padding:35px;
+            background: yellow;
+            background-clip: padding-box;
+        /* background_clip定义绘制区域参数*/
+        }
+
+        #example3 {
+            border: 10px dotted black;
+            /*dotted 参数定义boder类型*/
+            padding:35px;
+            background: yellow;
+            background-clip: content-box;
+            /* background_clip定义绘制区域参数*/
+        }
+    </style>
+</head>
+<body>
+
+<p>No background-clip (border-box is default):</p>
+<div id="example1">
+
+    <p>L\aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example2">
+
+    <p>Lorequam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+
+    <p>Lorem ipmagna aliquam erat volutpat.</p>
+</div>
+
+</body>
+</html>
