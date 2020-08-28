@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ol li {
+            color: red;
+        }
+        /* 仅针对某一个子元素进行定义,而不是初始化所有的同名子元素 */
+        
+        ol li a {
+            color: green;
+        }
+        
+        .nav li a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>后代选择器1</li>
+        <li>后代选择器1</li>
+        <li><a href="#">后代选择器1.1</a></li>
+    </ol>
+    <ul>
+        <li>后代选择器2</li>
+        <li><a href="http://www.baidu.com">后代选择器2.1</a></li>
+    </ul>
+    <ul class="nav">
+        <li>后代选择器2</li>
+        <li><a href="http://www.baidu.com">后代选择器2.1</a></li>
+    </ul>
+</body>
+
+</html>

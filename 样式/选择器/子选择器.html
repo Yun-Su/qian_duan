@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .nav>a {
+            color: red;
+        }
+        /* 亲儿子选择器.绝不会向下一级递归 */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="http://www.baidu.com">我是子元素1</a>
+        <a href="http://www.baidu.com">我是子元素2</a>
+        <a href="http://www.baidu.com">我是子元素3</a>
+        <p>
+            <a href="http://www.baidu.com">我不是子元素</a>
+        </p>
+        <a href="http://www.baidu.com">我是子元素4</a>
+    </div>
+</body>
+
+</html>
