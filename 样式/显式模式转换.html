@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            display: block;
+            /* 将行内元素转换为块级元素 */
+        }
+        
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            display: inline;
+            /* 将块级元素转换为行内元素 */
+        }
+        
+        span {
+            width: 200px;
+            height: 50px;
+            background-color: gray;
+            display: inline-block;
+            /* 将行内元素转换为行内块元素 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="http://www.baidu.com">百度</a>
+    <p>
+        <a href="http://www.jandan.net">摸鱼</a>
+    </p>
+
+    <div>块级元素转换为行内元素</div>
+
+    <span>行内元素转换为行内块元素</span>
+    <span>行内元素转换为行内块元素</span>
+</body>
+
+</html>
