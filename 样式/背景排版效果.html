@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
         div {
-            width: 300px;
-            height: 200px;
-            background-image: url(/media_resourcing/bg.jpg);
+            width: 1000px;
+            height: 1000px;
+            background-color: yellow;
+            /* 定义背景颜色 */
+            background-image: url("http://wx4.sinaimg.cn/mw600/e7ac9c63ly1gi7gkxpuhuj20go0hpgmz.jpg");
+            background-repeat: no-repeat;
+            /* 定义图片是否平铺显示 */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* 还可以定义沿x轴平铺或者y轴平铺 */
+            background-position: center top;
+            /* 定义背景图片位置,分别对应X轴坐标中的center,Y轴坐标中的top,也可以输入精确定位px坐标 */
+            /* background:red url("../media_resourcing/cat_face.jpg") no-repeat fixed center top; */
+            /* 也可以一次定义5种属性,顺序: 颜色 图片链接 图片平铺方式 图片滚动方式 图片位置方式 */
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div>笔记本电脑</div>
 </body>
 
 </html>
