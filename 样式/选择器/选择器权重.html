@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test {
+            color: red;
+        }
+        
+        div {
+            color: blue;
+            /* color:yellow!important; */
+            /* 此时启用最高优先级 */
+        }
+        
+        #demo {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="test" id="demo" style="color:black">css优先级测试</div>
+    <!-- 优先级从低到高依次为 继承<元素选择器<类选择器/伪类选择器<ID选择器<行内样式style=""<!important -->
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #father {
+            color: red;
+        }
+        
+        p {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <p>选择器权重1</p>
+        <!-- P标签 从父元素father那里继承的元素权重是0 -->
+        <!--即使是#father {color: red!important!}也一样是0 -->
+    </div>
+
+</body>
+
+</html>

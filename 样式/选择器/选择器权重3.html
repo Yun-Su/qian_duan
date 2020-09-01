@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul li {
+            color: green;
+        }
+        /* ul li的权重叠加计算  ul(0001) li(0001)加起来权重0002 */
+        
+        li {
+            color: red;
+        }
+        /* li的权重计算为0001 */
+        
+        .nav li {
+            color: black;
+        }
+        /* .nav li的选择器权重计算为.nav(0010) li(0001) 加起来权重11 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- 选择器权重ul li 的权重比li的权重高,所以ul li的样式生效 -->
+        <li>元素1</li>
+        <li>元素2</li>
+        <li>元素3</li>
+    </ul>
+    <ul class="nav">
+        <li>元素4</li>
+        <li>元素5</li>
+        <li>元素6</li>
+    </ul>
+    <!-- 选择器权重.nav li 的权重比其他的权重高,所以.nav li{}的样式生效 -->
+
+</body>
+
+</html>
