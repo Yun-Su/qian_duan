@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        div {
+            /* overflow: hidden; */
+            /* 清除浮动方法二 */
+            width: 1100px;
+            border: 1px solid red;
+            background-color: skyblue;
+            margin: 0px auto;
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            /* 清除浮动方法三 */
+        }
+        
+        li {
+            float: left;
+            list-style: none;
+            background-color: springgreen;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+        
+        .clear {
+            clear: both;
+            /* 浮动效果会导致边框为0 */
+            /* 此时需要调用 */
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <div class="clearfix"> -->
+        <!-- 解决方法三 -->
+        <li>盒子1</li>
+        <li>盒子2</li>
+        <li>盒子3</li>
+        <!-- <div class="clear"></div> -->
+        <!-- 方法一  调用一个div类来清除浮动效果-->
+    </div>
+</body>
+
+</html>
