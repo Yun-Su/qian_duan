@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        div
-        {
-            border:5px solid red;
-            /*border定义边框线粗细*/
-            padding: 50px 20px;
-            /*padding定义上下左右四个方向的参数  */
-            width:500px ;
-            /*width定义元素宽度*/
+        .tuoyuan {
+            height: 200px;
+            width: 600px;
+            line-height: 200px;
+            text-align: center;
             border-radius: 50px;
-        /* border-radius参数调整弧度大小*/
+            /* border-radius参数调整弧度大小*/
+            background-color: green;
+            box-shadow: 20px 30px 10px 20px #00ffff;
+            /*    四个参数对应水平阴影距离 垂直阴影距离 模糊过渡的距离 阴影尺寸(把阴影放大一些) 阴影的颜色*/
+        }
+        
+        .radius {
+            margin-top: 50px;
+            /* 与上面一个盒子隔开50px距离 */
+            line-height: 200px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
+            /* 制造一个圆形 */
+            background-color: yellow;
+        }
+        
+        .yaowan {
+            margin-top: 50px;
+            /* 与上面一个盒子隔开50px距离 */
+            line-height: 200px;
+            text-align: center;
+            width: 600px;
+            height: 200px;
+            border-radius: 100px;
+            /* 制造一个药丸形 */
             background-color: blue;
-            box-shadow: 10px 50px 10px #00ffff;
-        /*    四个参数对应水平阴影距离 垂直阴影距离 模糊距离 阴影的颜色*/
+        }
+        
+        .fuza {
+            margin-top: 50px;
+            /* 与上面一个盒子隔开50px距离 */
+            line-height: 200px;
+            text-align: center;
+            width: 600px;
+            height: 200px;
+            border-radius: 10px 20px 30px 40px;
+            /* 制造一个复合圆角矩形,分别对应左上角 右上角 右下角 左下角 四个值 */
+            background-color: red;
         }
     </style>
 </head>
+
 <body>
-<div>border-radiusd定义圆角边框</div>
+    <div class="tuoyuan">制造一个圆角矩形</div>
+    <div class="radius">制造一个圆形</div>
+    <div class="yaowan">制造一个药丸形</div>
+    <div class="fuza">制造一个复合圆角矩形</div>
+
 </body>
+
 </html>

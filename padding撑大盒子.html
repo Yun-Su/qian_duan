@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--告诉浏览器语言类型-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--定义字符集编码类型-->
+    <title>网页标题</title>
+    <style>
+        .test {
+            width: 200px;
+            height: 100px;
+            color: black;
+            background-color: grey;
+            line-height: 100px;
+            font-size: 20px;
+            padding-left: 20px;
+            /* 此处将盒子撑大了20px,现在盒子宽度220px了 */
+        }
+        
+        .nav {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            /* 在没有指定明确宽度的时候,使用padding,不会撑大盒子宽度,但是文字有默认高度,撑大了div的高度 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">盒子宽200px</div>
+    <div class="test">盒子宽200px</div>
+    <div class="test">盒子宽200px</div>
+
+
+
+    <div class="nav">盒子宽x</div>
+    <div class="nav">盒子宽</div>
+    <div class="nav">盒子宽</div>
+</body>
+
+</html>

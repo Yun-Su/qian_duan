@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--lang==language 指定语言为中文-->
+
+<head lang="zh-CN">
+    <title>Days Gone</title>
+    <link rel="icon" href="./media_resourcing/title_logo.ico" type="images/x-ico" />
+    <!--设置标题网页logo-->
+    <meta charset="UTF-8">
+    <style>
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            border: 1px solid transparent;
+            /* 如果注释border这一行,就会引起sondiv的margin 100px失效*/
+            /* padding : 1px 也行 */
+            /* overflow: hidden; 最有效,无需改动盒子大小 */
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

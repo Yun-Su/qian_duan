@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        div {
+            float: left;
+            /* 定义盒子浮动显示,方向靠左,顶部默认和第一个对齐 */
+            /* 启用浮动的盒子会随ui布局进行动态调整,界面宽度不足时会另起一行对齐 */
+            width: 300px;
+            height: 150px;
+            background-color: blue;
+        }
+        
+        .two {
+            background-color: purple;
+        }
+        
+        .four {
+            background-color: yellow;
+        }
+        
+        span {
+            float: left;
+            /* 浮动元素具有 行内块特性 */
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<div class="two">1</div>
+<div class="four">2</div>
+<div class="two">3</div>
+<div class="four">4</div>
+<span>这是一个span</span>
+
+<body>
+
+</body>
+
+</html>
