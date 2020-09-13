@@ -45,7 +45,7 @@ body {
 
 .search input {
     float: left;
-    width: 130px;
+    width: 137px;
     height: 60px;
     border: 3px solid blue;
     border-right: 0;
@@ -62,4 +62,39 @@ button {
     /* button默认有边框,此处为了美观去掉了边框 */
     background: url(../media_resourcing/search.png);
     background-size: 66px 66px;
+}
+.background-color{
+    background: black;
+}
+.background-color .banner{
+    height: 420px;
+    width:1200px;
+    margin: 0 auto;
+    background-color: yellow;
+
+}
+.background-color .banner .hz1{
+    float: left;
+}
+.background-color .banner .hz1 ul li {
+    padding-left: 10px;
+    border-bottom: 1px solid aliceblue;
+    list-style:none;
+    height: 69px;
+    line-height: 70px;
+    width: 100px;
+}
+
+.background-color .banner .hz1 ul li span{
+    float: right;
+}
+.background-color .banner .hz1 ul li a {
+text-decoration: none;
+}
+.background-color .banner .hz2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    float: right;
+    margin-top: auto;
 }
