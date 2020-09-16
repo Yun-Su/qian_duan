@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .son{
+            position: absolute;
+            /*绝对定位,相对于父元素来进行定位,如果没有父元素,或者父元素没有定位,则以最近一级的有定位父元素为主,其次以浏览器边框为主*/
+            /*绝对定位不占有原来的位置.会导致UI布局改变*/
+            bottom: 0px;
+            left: 10px ;
+            /*将位置移动到距离父元素位置低部0px,距离左边10px*/
+            /*father元素没有进行定位,子元素只好根据浏览器进行移动*/
+
+            width: 100px;
+            height: 150px;
+            background-color: blue;
+        }
+        .father{
+            /*position: relative;*/
+            /*对父元素进行定位,启用后,就能把.son的活动区域限制在father中*/
+            width:200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="father">父元素</div>
+<div class="son">子元素</div>
+</body>
+</html>

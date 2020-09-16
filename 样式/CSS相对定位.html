@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            position: relative;
+            /*定义相对定位,以自身原来的坐标作为定位,移动时空出来的位置不会导致其他布局改动*/
+            top:100px;
+            left: 100px ;
+            /*将位置移动到距离原位置顶部100px,距离左边100px*/
+
+            width: 100px;
+            height: 150px;
+            background-color: blue;
+        }
+        .box2{
+            width: 100px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
